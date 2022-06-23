@@ -15,7 +15,7 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: ./spring-dockercompose-app
+    build: ./dockercompose
     restart: on-failure
     env_file: ./.env
     ports:
